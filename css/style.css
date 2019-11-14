@@ -1,6 +1,6 @@
-body,html {
+body{
    background: linear-gradient(white, gray);
-   height: 100%;
+  margin: 0px;
 }
 .configimg{
     width: 350px;
@@ -16,6 +16,12 @@ body,html {
 .icone{
     width: 150px;
     border-radius: 50px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.45); 
+    margin-bottom: 30px;
+}
+.icone1{
+    width: 100px;
+    border-radius: 20px;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.45); 
     margin-bottom: 30px;
 }
