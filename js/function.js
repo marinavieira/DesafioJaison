@@ -20,7 +20,7 @@ $(function () {
 
             var texto = "<h3 class='descricao'><b>" + data.name + "</b></h3>"
             texto += "<br /><img class='icone' src='" + data.avatar_url + "' alt='" + data.name + "' />"
-            texto += `<br /><div class='descricao'><b>Local de trabalho:</b> ${data.location} </div>`
+            texto += `<br /><div class='descricao'><b>Localidade:</b> ${data.location} </div>`
             texto += `<br /><div class='descricao'><b>Número de repositórios:</b> ${data.public_repos}</div>`
             texto += `<br /><div class='descricao'><b>Número de Seguidores:</b> ${data.following} </div>`
             
@@ -36,7 +36,6 @@ $(function () {
         });
     });
           function getrepos(texto, buscar) {
-            
                 botao1.on('click', function () {
                 $.ajax({
                     url: "https://api.github.com/users/" + buscar.val() + "/repos"
@@ -58,7 +57,6 @@ $(function () {
             });
         }
             function getvisitados(texto, buscar) {
-               
             botao2.on('click', function () {
             $.ajax({
                 url: "https://api.github.com/users/" + buscar.val() + "/starred"
@@ -69,6 +67,7 @@ $(function () {
                     console.log(item);
 
                    texto += "<br/><a class='links' href='" + item.clone_url + "'>" + item.full_name + "</a>"
+                   texto += '<br/><img class="icone1" src="' + item.owner.avatar_url +'" />'
                 });
 
                 retorno.html(texto);
