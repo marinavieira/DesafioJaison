@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <h4 >Verificação de Repositórios de Usuários</h4>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <img class="configimg" src="img/icone.png" href="https://github.com/" alt="">
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="well well-sm">
+                        <form class="js-form-busca">
+                            <div class="form-group">
+                                <label>Usuário</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><img class="gitobservando" src="img/oi.png"></div>
+                                    <input type="text" class="form-control js-input-usuario" id="limpainput"
+                                        placeholder="digite aqui um nome de usuário ou repositório" required>
+                                </div>
+                                <button type="submit" class="btn btn-default botao">Buscar</button>
+                                <button type="submit" class="btn btn-default botao1 invisivel">Buscar
+                                    repositorios</button>
+                                <button type="submit" class="btn btn-default botao2 invisivel">Buscar mais
+                                    visitados</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="invisivel" id="parabens">
+                    <div class="col-xs-12">
+                        <pre id="retorno"></pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <address>
+            <strong>Marina Vieira Ferreira</strong><br>
+        </address>
+        <address>
+            Email: marinanunesvieira@gmail.com
+        </address>
+        <img class="imgfooter" src="img/gitfooter.png">
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/animacaobotao.js"></script>
+
+</body>
+
+</html>
