@@ -9,7 +9,6 @@ $(function () {
     //form.on('submit', false);
     form.on('submit', function(event){
         event.preventDefault();
-        return false;
     });
     botao.on('click', function () {
         $('#parabens').removeClass("invisivel");
