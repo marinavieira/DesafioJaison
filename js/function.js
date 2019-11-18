@@ -11,7 +11,7 @@ $(function () {
         event.preventDefault();
     });
     botao.on('click', function () {
-        $('#parabens').removeClass("invisivel");
+        $('#divretorno').removeClass("invisivel");
         $.ajax({
             url: "https://api.github.com/users/" + buscar.val()
         }).done(function (data) {
