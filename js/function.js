@@ -21,15 +21,14 @@ $(function () {
             texto += "<br /><img class='icone' src='" + data.avatar_url + "' alt='" + data.name + "' />"
             texto += `<br /><div class='descricao'><b>Localidade:</b> ${data.location} </div>`
             texto += `<br /><div class='descricao'><b>Número de repositórios:</b> ${data.public_repos}</div>`
-            texto += `<br /><div class='descricao'><b>Número de Seguidores:</b> ${data.following} </div>`
+            texto += `<br /><div class='descricao'><b>Número de Seguidores:</b> ${data.following} </div><br/><br/><br/><br/>`
             
             retorno.html(texto);
             getrepos(texto, buscar)
             getvisitados(texto, buscar)
-
-
+            
         }).error(function () {
-            retorno.text('Usuario não encontrado')
+            retorno.text('Usuário não encontrado')
         }).always(function () {
             buscar.fadeIn();
         });
@@ -77,6 +76,6 @@ $(function () {
                 buscar.fadeIn();
             });
         });
-    }
+        
+    }     
 });
-
